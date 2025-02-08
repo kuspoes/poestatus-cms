@@ -24,14 +24,26 @@ cms.storage(
 );
 
 cms.collection("posts", "gh:src/status", [
+  "title: text",
   {
-    name: "Title",
-    type: "text",
+    name: "summary",
+    type: "textarea",
+    attributes: {
+      required: true,
+    },
   },
   {
-    name: "Content",
-    type: "markdown",
+    name: "image",
+    type: "file",
+    uploads: "uploads",
+    attributes: {
+      accept: "image/*",
+    },
   },
+  "tags: list",
+  "draft: checkbox",
+  "show_toc: checkbox",
+  "content: markdown",
 ]);
 
 cms.upload("uploads", "gh:uploads");

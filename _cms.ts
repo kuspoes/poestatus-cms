@@ -25,7 +25,6 @@ cms.storage(
 
 cms.collection("posts", "gh:src/status", [
   "title: text",
-  "content: markdown",
   {
     name: "summary",
     type: "textarea",
@@ -41,9 +40,6 @@ cms.collection("posts", "gh:src/status", [
       accept: "image/*",
     },
   },
-  "tags: list",
-  "draft: checkbox",
-  "show_toc: checkbox",
   "content: markdown",
 ]);
 

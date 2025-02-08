@@ -23,7 +23,7 @@ cms.storage(
   }),
 );
 
-cms.collection("posts", "gh:status", [
+cms.collection("posts", "gh:src/status", [
   "title: text",
   "content: markdown",
   {

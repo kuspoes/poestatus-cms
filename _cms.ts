@@ -25,6 +25,7 @@ cms.storage(
 
 cms.collection("posts", "gh", [
   "title: text",
+  "content: markdown",
   {
     name: "summary",
     type: "textarea",

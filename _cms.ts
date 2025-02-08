@@ -40,9 +40,6 @@ cms.collection("posts", "gh:src/status", [
       accept: "image/*",
     },
   },
-  "tags: list",
-  "draft: checkbox",
-  "show_toc: checkbox",
   "content: markdown",
 ]);
 
